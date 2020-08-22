@@ -1,0 +1,59 @@
+*{
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+   font-family: 'Fira Code', monospace;
+}
+
+.navbar {
+   font-size: 40px;
+   text-align: center;
+   padding: 10px;
+   background-color: #111942;
+   color: wheat;
+   margin-bottom: 10px;
+}
+
+.links {
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+   gap: 10px;
+}
+
+.link{
+   padding: 5px 0px;
+   color: white;
+   border-radius: 4px;
+   text-decoration: none;
+   background-color: royalblue;
+   text-align: center;
+   width: 95%;
+   margin: auto;
+}
+
+.article {
+   display: block;
+   text-decoration: none;
+   background-color: #eee;
+   width: 85%;
+   margin: 15px auto;
+   border-radius: 5px;
+   padding: 10px;
+}
+
+.name {
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+
+.thumbnail,.description{
+   margin-bottom: 10px;
+}
+
+.description {
+   color: black;
+}
+
+.publishedDate {
+   color: #111942;
+}

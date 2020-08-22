@@ -1,24 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
+import './styles/style.css';
+
+import NavBar from './components/NavBar';
+import Links from './components/Links';
+
+//! Componenets
+import TopNews from './components/TopNews';
+import Business from './components/Business';
+import Entertainment from './components/Entertainment';
+import Politics from './components/Politics';
+import Technology from './components/Technology';
+import Sports from './components/Sports';
+import LifeStyle from './components/LifeStyle';
+import India from './components/India';
+import World from './components/World';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <NavBar/>
+        <Links/>
+          <Route path="/" exact component={TopNews}/>
+          <Route path="/business" component={Business}/>
+          <Route path="/entertainment" component={Entertainment}/>
+          <Route path="/politics" component={Politics}/>
+          <Route path="/technology" component={Technology}/>
+          <Route path="/sports" component={Sports}/>
+          <Route path="/lifeStyle" component={LifeStyle}/>
+          <Route path="/india" component={India}/>
+          <Route path="/world" component={World}/>
+      </Router>
     </div>
   );
 }
