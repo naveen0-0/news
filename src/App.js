@@ -15,6 +15,7 @@ import Sports from './components/Sports';
 import LifeStyle from './components/LifeStyle';
 import India from './components/India';
 import World from './components/World';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/india" component={India}/>
           <Route path="/world" component={World}/>
       </Router>
+      <Footer/>
     </div>
   );
 }

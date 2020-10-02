@@ -5,40 +5,52 @@
    font-family: 'Fira Code', monospace;
 }
 
+body {
+   background-color: rgb(45, 49, 49);
+}
+
 .navbar {
    font-size: 40px;
    text-align: center;
    padding: 10px;
-   background-color: #111942;
-   color: wheat;
+   background-color: #1f1c1c;
+   color: white;
    margin-bottom: 10px;
 }
 
 .links {
    display: grid;
-   grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+   grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
    gap: 10px;
+   width: 95%;
+   margin: auto;
+   padding: 10px 0px;
+}
+
+.linkDiv {
+   background-color: rebeccapurple;
+   padding: 5px 10px;
+   border-radius: 3px;
+   text-align: center;
+   font-size: 14px;
 }
 
 .link{
-   padding: 5px 0px;
    color: white;
-   border-radius: 4px;
    text-decoration: none;
-   background-color: royalblue;
-   text-align: center;
-   width: 95%;
-   margin: auto;
 }
 
 .article {
    display: block;
    text-decoration: none;
-   background-color: #eee;
-   width: 85%;
+   background-color: #2e2e31;
+   width: 95%;
    margin: 15px auto;
    border-radius: 5px;
-   padding: 10px;
+   padding: 20px;
+   color: white;
+   border: 2px solid rgb(143, 139, 131);
+   position: relative;
 }
 
 .name {
@@ -51,9 +63,24 @@
 }
 
 .description {
-   color: black;
+   color:white;
 }
 
 .publishedDate {
-   color: #111942;
+   color:orange;
+   padding: 2px;
+}
+
+footer {
+   background-color: #1f1c1c;
+   padding: 20px 0px;
+   text-align: center;
+   color: rgb(224, 208, 202);
+   font-size: 18px;
+}
+
+.click {
+   color:rgb(161, 154, 46);
+   font-weight: bold;
+   padding: 2px;
 }

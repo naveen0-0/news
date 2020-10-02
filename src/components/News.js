@@ -8,6 +8,7 @@ export default function News(props){
             <div className="thumbnail"><img src={props.info.image.thumbnail.contentUrl} alt={props.info.name}/></div>
             <div className="description">{props.info.description}</div>
             <div className="publishedDate">Published At : {date.toLocaleTimeString()}</div>
+            <div className="click">Click on the article to Read More</div>
       </a>
    )
 }

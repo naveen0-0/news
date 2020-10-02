@@ -12,7 +12,7 @@ export default function India(){
                'x-rapidapi-key':'9bb796ccbcmsh8b394709dfdff58p18f395jsne607230d625c'
             }
          })
-         setNews(news.data.value)
+         setNews(news.data.value);
       }
       getNews();
    },[])
