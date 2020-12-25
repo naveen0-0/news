@@ -18,7 +18,7 @@ export default function Business(){
    },[])
 
    return(
-      <div>
+      <div className="headlinesContainer">
          {news.map(article=><News key={article.name} info={article}/>)}
       </div>
    )

@@ -7,7 +7,7 @@ export default function Technology(){
 
    useEffect(()=>{
       async function getNews(){
-         let news = await Axios.get("https://bing-news-search1.p.rapidapi.com/news?market=en-IN&category=technology",{
+         let news = await Axios.get("https://bing-news-search1.p.rapidapi.com/news?market=en-IN&category=scienceandtechnology",{
             "headers" : {
                'x-rapidapi-key':'9bb796ccbcmsh8b394709dfdff58p18f395jsne607230d625c'
             }

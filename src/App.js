@@ -27,7 +27,7 @@ function App() {
           <Route path="/business" component={Business}/>
           <Route path="/entertainment" component={Entertainment}/>
           <Route path="/politics" component={Politics}/>
-          <Route path="/technology" component={Technology}/>
+          <Route path="/tech" component={Technology}/>
           <Route path="/sports" component={Sports}/>
           <Route path="/lifeStyle" component={LifeStyle}/>
           <Route path="/india" component={India}/>
